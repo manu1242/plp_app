@@ -41,6 +41,9 @@ app.post('/signin', async (req, res) => {
     res.status(500).json({ error: 'Internal server error' });
   }
 });
+app.get('/', (req, res) => {
+  res.send('Hello, World!');
+});
 
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);

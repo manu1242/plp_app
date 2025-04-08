@@ -15,7 +15,7 @@ const Auth = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:5000/signin', {
+      const response = await fetch('https://plp-app-server.vercel.app/signin', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -44,7 +44,7 @@ const Auth = () => {
     e.preventDefault();
     if (signUpName && signUpEmail && signUpPassword) {
       try {
-        const response = await fetch('http://localhost:5000/signup', {
+        const response = await fetch('https://plp-app-server.vercel.app/signup', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
