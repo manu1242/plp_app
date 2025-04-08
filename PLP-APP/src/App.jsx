@@ -7,7 +7,7 @@ import {
   useLocation,
 } from "react-router-dom";
 import HomePage from "./Home/Home";
-import Navbar from "./navbar/navbar";
+import Navbar from "./Navbar/Navbar.jsx";
 import Auth from "./Login/Auth";
 
 const AppWrapper = () => {

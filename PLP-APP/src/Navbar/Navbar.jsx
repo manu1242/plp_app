@@ -79,7 +79,6 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Navbar */}
       {navbarOpen && (
         <div className="mobile-menu">
           {["SHOP", "SKILLS", "STORIES", "ABOUT", "CONTACT US"].map((link) => (
@@ -95,7 +94,6 @@ const Navbar = () => {
         </div>
       )}
 
-      {/* Desktop Navbar */}
       <div className="desktop-menu">
         {["SHOP", "SKILLS", "STORIES", "ABOUT", "CONTACT US"].map((link) => (
           <a key={link} href="#" className="desktop-link">
